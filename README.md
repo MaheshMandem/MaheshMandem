@@ -21,4 +21,9 @@
 
 ### Featured Project
 
-**[FinOpsX](https://github.com/MaheshMandem/Finopsx)** — fintech microservices platform. Spring Boot 3 payment service with Kafka events, Redis caching, PostgreSQL and Spring Security.
+**[FinOpsX](https://github.com/MaheshMandem/Finopsx)** — payments microservice in Spring Boot 3
+
+- Idempotent payment API (`Idempotency-Key`) so client retries never pay twice
+- Payment status state machine with optimistic locking
+- Kafka events published after DB commit, Redis caching, Spring Security
+- 18 automated tests, built on every push with GitHub Actions
